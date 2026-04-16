@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<title>lesson finder™ </title>
+
+		<link rel="shortcut icon" content="favicon.webp" />
+	
+		<script src="/scram/scramjet.all.js"></script>
+		<script src="/baremux/index.js"></script>
+		
+		<link rel="stylesheet" href="index.css" />
+		<script src="register-sw.js" defer></script>
+		<script src="search.js" defer></script>
+		<script src="index.js" defer></script>
+	</head>
+
+	<body>
+		<div title="Logo" class="flex-center logo-wrapper header-center">
+			<img class="logo" src="sj.png" alt="math image" />
+			<h1>Lesson finder™</h1>
+		</div>
+		<div class="flex-center desc left-margin">
+			<p style="color: grey;">
+				To find a lesson, you will type it out on the search bar. Then enter when done
+			</p>
+		</div>
+
+		<form id="sj-form" class="flex-center">
+			<input
+				id="sj-search-engine"
+				value="https://search.brave.com/search?q=%s"
+				type="hidden"
+			/>
+			<input id="sj-address" type="text" placeholder="Find a lesson" />
+		</form>
+
+
+
+
+<hr style="width: 25%; margin-top: 20px;">
+
+<h3 style="color: rgb(100, 78, 243); text-align: center; ;"> Pre-chosen Lesson links </h3>
+
+
+		<style>
+			.lesson-link {
+				border: none;
+				background: none;
+				padding: 0;
+			}
+			.lesson-link img {
+				transition: transform 0.2s ease;
+			}
+			.lesson-link img:hover {
+				transform: scale(1.2);
+			}
+		</style>
+
+		<div class="flex-center">
+
+			<button onclick="document.getElementById('sj-address').value='https://play.geforcenow.com/mall/'; document.getElementById('sj-form').dispatchEvent(new Event('submit')); return false;" class="lesson-link">
+				<img src="gfn.png" alt="Click to visit website" style="cursor: pointer; max-width: 100px; margin: 15px;" />
+			</button>
+
+			<button onclick="document.getElementById('sj-address').value='https://www.cineby.gd/'; document.getElementById('sj-form').dispatchEvent(new Event('submit')); return false;" class="lesson-link">
+				<img src="movi.png" alt="Click to visit website" style="cursor: pointer; max-width: 100px; margin: 15px;" />
+			</button>
+		</div>
+
+
+
+
+		<div class="desc left-margin">
+			<p id="sj-error"></p>
+			<pre id="sj-error-code"></pre>
+		</div>
+		<footer>
+			<div>
+			</div>
+			<div>
+			</div>
+		</footer>
+
+
+	</body>
+</html>
