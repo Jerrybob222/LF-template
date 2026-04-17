@@ -1,1 +1,1 @@
-<p> browse </p>
+<p> To add stuff, go to the public folder, then index.html</p>
