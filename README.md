@@ -7,5 +7,5 @@
 <p> Question and answer </p>
 <br>
 <p> 1: To add stuff, go to the public folder, then index.html </p>
-<p> 2: You will need a Front and Back end. (use a provider) </p>
+<p> 2: You will need a Front and Back end. (use a provider like, wasmer or render) </p>
 <p> 3: To change the html, go into the public folder, then into index.html (home) </p>
